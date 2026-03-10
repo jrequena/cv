@@ -3,7 +3,10 @@ Fecha: (Octubre 2014 –Marzo 2017).
 Residencia: Carabobo,Venezuela.
 
 Actividad:
--Desarrollador Web
--Soporte en la Base de Datos
--Auxiliar SCRUM Master.
--Planificación
+Full Stack Developer
+
+Responsabilidades:
+Desarrollo de aplicaciones web y mantenimiento de sistemas existentes.
+Soporte y administración de bases de datos.
+Participación en metodologías ágiles colaborando como auxiliar de Scrum Master.
+Planificación y seguimiento de tareas de desarrollo.
