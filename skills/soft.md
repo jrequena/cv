@@ -1,3 +1,4 @@
-● La capacidad de ajustarse a cambios rápidos en los requisitos del proyecto, tecnologías emergentes y nuevos entornos de trabajo.
-● Comunicación y Trabajo en Equipo en entornos ágiles o proyectos de desarrollo iterativo.
-● La habilidad para identificar problemas, investigar y encontrar soluciones efectivas de manera eficiente.
+Adaptación rápida a nuevas tecnologías y cambios de requisitos.
+Trabajo en equipo en entornos ágiles.
+Capacidad de análisis y resolución de problemas.
+Comunicación técnica efectiva.

@@ -3,5 +3,8 @@ Fecha: (Pasantías 2014, 3 Meses)
 Residencia: Edo. Guárico. Venezuela.
 
 Actividad:
--Desarrollador Web 
--Automatización de procesos administrativos dentro de departamentos de RRHH
+Desarrollador Web
+
+Responsabilidades:
+Automatización de procesos administrativos dentro del departamento de Recursos Humanos.
+Desarrollo de herramientas web para mejorar la gestión interna de información.
