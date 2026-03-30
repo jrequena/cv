@@ -1,34 +1,34 @@
 Habilidades Técnicas
-Lenguajes de programación
-PHP
-JavaScript
-TypeScript
-Python
+    Lenguajes de programación
+    PHP
+    JavaScript
+    TypeScript
+    Python
 
 Frameworks
-Angular
-Symfony
-Express
-Zend Expressive
+    Angular
+    Symfony
+    Express
+    Zend Expressive
 
 Bases de datos
-MySQL
-PostgreSQL
+    MySQL
+    PostgreSQL
 
 Sistemas operativos
-Linux
-Windows
+    Linux
+    Windows
 
 Herramientas y tecnologías
-Git
-Composer
-HTML / CSS / AJAX
-APIs REST
-JSON / XML / SOAP
-ORM
+    Git
+    Composer
+    HTML / CSS / AJAX
+    APIs REST
+    JSON / XML / SOAP
+    ORM
 
 Buenas prácticas
-Principios SOLID
-Estándares PSR
-Patrones de diseño
-Pruebas unitarias
+    Principios SOLID
+    Estándares PSR
+    Patrones de diseño
+    Pruebas unitarias

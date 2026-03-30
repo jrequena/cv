@@ -7,4 +7,4 @@ Desarrollador Web
 
 Responsabilidades:
 Automatización de procesos administrativos dentro del departamento de Recursos Humanos.
-Desarrollo de herramientas web para mejorar la gestión interna de información.
+Desarrollo e implementación de herramientas web para mejorar la gestión interna de información.

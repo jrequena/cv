@@ -9,5 +9,5 @@ Responsabilidades:
 Desarrollo y mantenimiento de aplicaciones web utilizando PHP, Angular y JavaScript.
 Diseño e implementación de APIs REST para integración de sistemas.
 Soporte técnico y resolución de incidencias en sistemas productivos.
-Optimización y mantenimiento de bases de datos MySQL.
+Optimización y mantenimiento de bases de datos MySQL y postgres.
 Supervisión técnica de proyectos y apoyo en la planificación de desarrollos.
