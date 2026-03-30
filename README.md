@@ -19,7 +19,10 @@ Focused on writing maintainable code, solving complex problems, and improving sy
 ---
 
 ## 🛠 Technical Skills
-
+![PHP](https://img.shields.io/badge/PHP-Backend-blue)
+![Angular](https://img.shields.io/badge/Angular-Frontend-red)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![Linux](https://img.shields.io/badge/Linux-Environment-black)
 ### Programming Languages
 
 * PHP
@@ -134,3 +137,4 @@ This repository contains my **professional CV and career information**, maintain
 ---
 
 ⭐ If you want to collaborate or discuss opportunities, feel free to connect with me on LinkedIn.
+    
