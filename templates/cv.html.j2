@@ -1,0 +1,123 @@
+{#- CV en HTML para imprimir a PDF (A4). Generado por build.py. -#}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ b.name }} — CV</title>
+<style>
+  :root { --text: #1f2328; --muted: #57606a; --accent: #1f4e79; --rule: #d0d7de; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #fff; color: var(--text);
+         font: 10.5pt/1.45 "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 32px 24px; }
+  h1 { margin: 0; font-size: 22pt; letter-spacing: -0.01em; }
+  .headline { margin: 2px 0 0; font-size: 12pt; font-weight: 600; color: var(--accent); }
+  .stack { margin: 2px 0 0; color: var(--muted); }
+  .contact { margin: 10px 0 0; color: var(--muted); font-size: 9.5pt; }
+  .contact a { color: inherit; }
+  h2 { margin: 20px 0 8px; padding-bottom: 3px; border-bottom: 1px solid var(--rule);
+       font-size: 11pt; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
+  h3 { margin: 12px 0 0; font-size: 11pt; }
+  .meta { color: var(--muted); font-size: 9.5pt; }
+  .role { margin: 2px 0 0; }
+  .role span { color: var(--muted); }
+  ul { margin: 4px 0 0; padding-left: 18px; }
+  li { margin: 2px 0; }
+  p { margin: 4px 0 0; }
+  .skills { display: grid; grid-template-columns: max-content 1fr; gap: 3px 12px; margin: 0; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; }
+  .project, .job { break-inside: avoid; }
+  @media (max-width: 600px) { .skills { grid-template-columns: 1fr; } .skills dd { margin-bottom: 6px; } }
+  @page { size: A4; margin: 14mm; }
+  @media print { main { padding: 0; max-width: none; } a { text-decoration: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>{{ b.name }}</h1>
+    <p class="headline">{{ t(headline.title) }}</p>
+    <p class="stack">{{ t(headline.stack) }}</p>
+    <p class="contact">
+      {{ t(b.location) }} · <a href="mailto:{{ b.email }}">{{ b.email }}</a> · {{ b.phone }}<br>
+      <a href="{{ b.linkedin }}">{{ b.linkedin | replace("https://www.", "") }}</a> ·
+      <a href="{{ b.github }}">{{ b.github | replace("https://", "") }}</a>
+      {% if show_company %}<br>{{ L.pj }}: {{ b.company.name }} · CNPJ {{ b.company.cnpj }}{% endif %}
+    </p>
+  </header>
+
+  <section>
+    <h2>{{ L.profile }}</h2>
+    <p>{{ summary }}</p>
+  </section>
+
+  <section>
+    <h2>{{ L.experience }}</h2>
+    {% for job in experience %}
+    <div class="job">
+      <h3>{{ job.company }}</h3>
+      <div class="meta">{{ t(job.location) }}</div>
+      {% for role in job.roles %}
+      <p class="role"><strong>{{ t(role.title) }}</strong> <span>· {{ period(role) }}</span></p>
+      {% endfor %}
+      <ul>
+        {% for h in job.highlights %}
+        <li>{{ t(h.text) }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </section>
+
+  {% if projects %}
+  <section>
+    <h2>{{ L.projects }}</h2>
+    {% for p in projects %}
+    <div class="project">
+      <h3>{{ t(p.name) }}</h3>
+      <div class="meta">{{ t(p.context) }}</div>
+      <p>{{ t(p.summary) }}</p>
+      <p class="meta"><strong>{{ L.tech }}:</strong> {{ p.tech | join(" · ") }} —
+        <a href="{{ b.repo }}/blob/main/{{ p.case_study }}">{{ L.case_study }}</a></p>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <section>
+    <h2>{{ L.skills }}</h2>
+    <dl class="skills">
+      {% for s in skills %}
+      <dt>{{ t(s.group) }}</dt>
+      <dd>{{ s["items"] | join(", ") }}</dd>
+      {% endfor %}
+    </dl>
+  </section>
+
+  {% if soft_skills %}
+  <section>
+    <h2>{{ L.soft_skills }}</h2>
+    <ul>
+      {% for s in soft_skills %}
+      <li>{{ t(s) }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section>
+    <h2>{{ L.education }}</h2>
+    {% for e in education %}
+    <p><strong>{{ t(e.degree) }}</strong> — {{ e.institution }} · {{ e.end }}</p>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2>{{ L.languages }}</h2>
+    <p>{% for l in languages %}{{ t(l.name) }} — {{ t(l.level) }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  </section>
+</main>
+</body>
+</html>

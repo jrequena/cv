@@ -1,0 +1,95 @@
+<!-- ARCHIVO GENERADO por build.py a partir de data/profile.yaml. No editar a mano. -->
+# {{ b.name }}
+
+**{{ t(headline.title) }}**\
+{{ t(headline.stack) }}
+
+![PHP](https://img.shields.io/badge/PHP-Laminas%20%7C%20Symfony-777BB4)
+![Angular](https://img.shields.io/badge/Angular-TypeScript-DD0031)
+![APIs](https://img.shields.io/badge/APIs-REST%20%7C%20GraphQL-E10098)
+![DB](https://img.shields.io/badge/DB-MySQL%20%7C%20PostgreSQL-4479A1)
+![AI](https://img.shields.io/badge/AI-Agents%20%7C%20MCP-222222)
+
+📍 {{ t(b.location) }} · ✉️ [{{ b.email }}](mailto:{{ b.email }}) · 📱 {{ b.phone }}\
+🔗 [LinkedIn]({{ b.linkedin }}) · 🏢 {{ L.pj }}: {{ b.company.name }} (CNPJ {{ b.company.cnpj }})
+
+---
+
+## 👨‍💻 {{ L.profile }}
+
+{{ summary }}
+
+## 📄 {{ L.downloads }}
+
+{% for lang in enabled_languages %}
+{% for name, v in variants.items() %}
+- **{{ L.variants[name] }}** — [Markdown](output/{{ lang }}/{{ v.file }}.md) · [HTML / PDF](output/{{ lang }}/{{ v.file }}.html)
+{% endfor %}
+{% endfor %}
+
+## 💼 {{ L.experience }}
+
+{% for job in experience %}
+### {{ job.company }}
+*{{ t(job.location) }}*
+
+{% for role in job.roles %}
+**{{ t(role.title) }}** · {{ period(role) }}{{ '' if loop.last else '\\' }}
+{% endfor %}
+
+{% for h in job.highlights[:4] %}
+- {{ t(h.text) }}
+{% endfor %}
+
+{% endfor %}
+## 🚀 {{ L.projects }}
+
+{% for p in projects %}
+### [{{ t(p.name) }}]({{ p.case_study }})
+*{{ t(p.context) }}*
+
+{{ t(p.summary) }}
+
+**{{ L.tech }}:** {{ p.tech | join(" · ") }}
+
+{% endfor %}
+## 🛠 {{ L.skills }}
+
+{% for s in skills %}
+- **{{ t(s.group) }}:** {{ s["items"] | join(", ") }}
+{% endfor %}
+
+## 🎓 {{ L.education }}
+
+{% for e in education %}
+**{{ t(e.degree) }}** — {{ e.institution }} · {{ e.end }}
+{% endfor %}
+
+## 🌎 {{ L.languages }}
+
+{% for l in languages %}
+- {{ t(l.name) }} — {{ t(l.level) }}
+{% endfor %}
+
+---
+
+## 📂 Sobre este repositorio
+
+Todo el CV se genera a partir de una **única fuente de datos**:
+
+```text
+data/profile.yaml   → datos, experiencia, proyectos, skills
+data/variants.yaml  → qué incluye cada versión del CV
+projects/*.md       → casos de estudio detallados
+templates/*.j2      → plantillas Markdown / HTML / README
+output/<idioma>/    → CV generados (no editar a mano)
+```
+
+Para regenerar los CV y este README:
+
+```bash
+pip install -r requirements.txt
+python build.py
+```
+
+Para obtener el PDF, abre cualquier `output/<idioma>/*.html` en el navegador e imprime como PDF.

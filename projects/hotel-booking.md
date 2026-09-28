@@ -1,5 +1,8 @@
 # Sistema de Gestión de Reservas de Hotel
 
+**Contexto:** Castro Group · Navicu.com (Carabobo, Venezuela) · oct. 2014 – mar. 2017\
+**Mi rol:** Full Stack Developer
+
 ## Descripción General
 
 Sistema web diseñado para la gestión de reservas hoteleras, permitiendo administrar disponibilidad de habitaciones, registro de clientes y control de reservas en tiempo real.
@@ -48,8 +51,8 @@ El sistema asegura consistencia en la asignación de habitaciones y mejora la ef
 
 Arquitectura cliente-servidor desacoplada:
 
-* **Frontend:** Angular
-* **Backend:** PHP (API REST)
+* **Frontend:** AngularJS
+* **Backend:** PHP · Symfony (API REST)
 * **Base de datos:** MySQL
 
 ### Flujo de reservas
@@ -175,8 +178,8 @@ El sistema permitió:
 
 ## Stack Tecnológico
 
-**Backend:** PHP
-**Frontend:** Angular
-**Base de datos:** MySQL
-**Entorno:** Linux
+**Backend:** PHP · Symfony\
+**Frontend:** AngularJS\
+**Base de datos:** MySQL\
+**Entorno:** Linux\
 **Control de versiones:** Git

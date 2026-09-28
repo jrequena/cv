@@ -1,0 +1,71 @@
+{#- CV en Markdown. Generado por build.py: no editar output/ a mano. -#}
+# {{ b.name }}
+
+**{{ t(headline.title) }}**\
+{{ t(headline.stack) }}
+
+📍 {{ t(b.location) }} · ✉️ [{{ b.email }}](mailto:{{ b.email }}) · 📱 {{ b.phone }}\
+🔗 [LinkedIn]({{ b.linkedin }}) · [GitHub]({{ b.github }}){{ '\\' if show_company else '' }}
+{% if show_company %}
+🏢 {{ L.pj }}: {{ b.company.name }} · CNPJ {{ b.company.cnpj }}
+{% endif %}
+
+---
+
+## {{ L.profile }}
+
+{{ summary }}
+
+## {{ L.experience }}
+
+{% for job in experience %}
+### {{ job.company }}
+*{{ t(job.location) }}*
+
+{% for role in job.roles %}
+**{{ t(role.title) }}** · {{ period(role) }}{{ '' if loop.last else '\\' }}
+{% endfor %}
+
+{% for h in job.highlights %}
+- {{ t(h.text) }}
+{% endfor %}
+
+{% endfor %}
+{% if projects %}
+## {{ L.projects }}
+
+{% for p in projects %}
+### {{ t(p.name) }}
+*{{ t(p.context) }}*
+
+{{ t(p.summary) }}
+
+**{{ L.tech }}:** {{ p.tech | join(" · ") }} — [{{ L.case_study }}]({{ b.repo }}/blob/main/{{ p.case_study }})
+
+{% endfor %}
+{% endif %}
+## {{ L.skills }}
+
+{% for s in skills %}
+- **{{ t(s.group) }}:** {{ s["items"] | join(", ") }}
+{% endfor %}
+
+{% if soft_skills %}
+## {{ L.soft_skills }}
+
+{% for s in soft_skills %}
+- {{ t(s) }}
+{% endfor %}
+
+{% endif %}
+## {{ L.education }}
+
+{% for e in education %}
+**{{ t(e.degree) }}** — {{ e.institution }} · {{ e.end }}
+{% endfor %}
+
+## {{ L.languages }}
+
+{% for l in languages %}
+- {{ t(l.name) }} — {{ t(l.level) }}
+{% endfor %}

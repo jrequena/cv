@@ -1,33 +1,19 @@
-<!-- ARCHIVO GENERADO por build.py a partir de data/profile.yaml. No editar a mano. -->
 # Joel David Requena Pulido
 
 **Senior Full Stack Developer · Tech Lead**\
 PHP · Angular · APIs REST y GraphQL · MySQL/PostgreSQL · IA aplicada al desarrollo
 
-![PHP](https://img.shields.io/badge/PHP-Laminas%20%7C%20Symfony-777BB4)
-![Angular](https://img.shields.io/badge/Angular-TypeScript-DD0031)
-![APIs](https://img.shields.io/badge/APIs-REST%20%7C%20GraphQL-E10098)
-![DB](https://img.shields.io/badge/DB-MySQL%20%7C%20PostgreSQL-4479A1)
-![AI](https://img.shields.io/badge/AI-Agents%20%7C%20MCP-222222)
-
 📍 Curitiba, Brasil · ✉️ [joel.2005.2@gmail.com](mailto:joel.2005.2@gmail.com) · 📱 +55 41 99729611\
-🔗 [LinkedIn](https://www.linkedin.com/in/joel-david-32b270b8) · 🏢 Contratación como PJ: UNIVIAN TECH LTDA (CNPJ 57.396.547/0001-75)
+🔗 [LinkedIn](https://www.linkedin.com/in/joel-david-32b270b8) · [GitHub](https://github.com/jrequena)\
+🏢 Contratación como PJ: UNIVIAN TECH LTDA · CNPJ 57.396.547/0001-75
 
 ---
 
-## 👨‍💻 Perfil
+## Perfil
 
 Desarrollador Full Stack Senior y Tech Lead con más de 11 años de experiencia en sistemas web empresariales con PHP, Angular y bases de datos relacionales. Diseñé y construí desde cero una plataforma universitaria de más de 10 módulos y más de 5.000 usuarios, que llevé a producción y sigo evolucionando. Desde 2023 lidero un equipo de 3–5 desarrolladores, tomo decisiones de arquitectura y trabajo directamente con el cliente. Integro agentes de IA y MCP en el día a día del desarrollo.
 
-## 📄 Versiones del CV
-
-- **CV principal — Full Stack Senior / Tech Lead** — [Markdown](output/es/cv.md) · [HTML / PDF](output/es/cv.html)
-- **Backend y Arquitectura** — [Markdown](output/es/cv-backend.md) · [HTML / PDF](output/es/cv-backend.html)
-- **Desarrollo asistido por IA** — [Markdown](output/es/cv-ai.md) · [HTML / PDF](output/es/cv-ai.html)
-- **Resumen de una página** — [Markdown](output/es/cv-1page.md) · [HTML / PDF](output/es/cv-1page.html)
-- **Versión completa** — [Markdown](output/es/cv-full.md) · [HTML / PDF](output/es/cv-full.html)
-
-## 💼 Experiencia profesional
+## Experiencia profesional
 
 ### GNBIT
 *Lima, Perú · actualmente en remoto desde Curitiba, Brasil*
@@ -39,6 +25,12 @@ Desarrollador Full Stack Senior y Tech Lead con más de 11 años de experiencia 
 - Desde 2023 lidero un equipo de 3–5 desarrolladores: decisiones de arquitectura, mentoring y relación directa con el cliente.
 - Digitalicé al 100% el ciclo de tesis y proyectos (registro, revisión, evaluación y aprobación) para miles de trabajos, reduciendo el tiempo de aprobación de semanas a días y con trazabilidad completa de cada estado.
 - Backend en PHP (Zend legacy y Laminas/Mezzio) con APIs REST y GraphQL, autenticación OAuth2 y control de acceso por roles.
+- Frontend en Angular y TypeScript (Signals, NG-Zorro, Apollo/GraphQL) con formularios dinámicos y componentes reutilizables.
+- Modelado y optimización de una base de datos MySQL/MariaDB con más de 100.000 registros interrelacionados; integración y sincronización con el sistema de RRHH institucional, depuración de duplicados y de registros huérfanos.
+- Evolución incremental del sistema: los módulos legacy (Zend, jQuery) conviven con los nuevos (Mezzio, Angular, GraphQL) y se refactorizan de forma progresiva.
+- Uso diario de agentes de IA y servidores MCP para consultar la base de datos, generar código y analizar código legacy.
+- Gestión documental: carga, versionado, tipos y estados de documentos asociados a proyectos y enmiendas.
+- Soporte de producción y resolución de incidencias.
 
 ### Castro Group · Navicu.com
 *Carabobo, Venezuela*
@@ -48,31 +40,39 @@ Desarrollador Full Stack Senior y Tech Lead con más de 11 años de experiencia 
 - Desarrollo y mantenimiento de la plataforma de reservas hoteleras de Navicu.com con PHP (Symfony), AngularJS y MySQL.
 - Validación de disponibilidad por rango de fechas y prevención de overbooking mediante transacciones y restricciones en base de datos.
 - Auxiliar de Scrum Master: planificación y seguimiento de las tareas del equipo.
+- Administración y soporte de las bases de datos.
 
-## 🚀 Proyectos destacados
+### M.P.P.T.T. (Ministerio del Poder Popular para el Transporte Terrestre)
+*Guárico, Venezuela*
 
-### [Plataforma universitaria de gestión académica y de investigación](projects/university-platform.md)
+**Desarrollador Web (pasantía, 3 meses)** · 2014
+
+- Automatización de procesos administrativos del departamento de Recursos Humanos mediante herramientas web internas.
+
+## Proyectos destacados
+
+### Plataforma universitaria de gestión académica y de investigación
 *GNBIT · diseño, construcción y liderazgo técnico*
 
 Plataforma de más de 10 módulos y más de 5.000 usuarios: tesis, evaluación y aprobación, enmiendas, gestión documental, investigadores y cursos, integración con RRHH y control presupuestario de proyectos. Proceso 100% digital y aprobaciones que pasaron de semanas a días.
 
-**Tecnologías:** PHP · Laminas/Mezzio · Zend · Angular · GraphQL · REST · OAuth2 · MySQL/MariaDB
+**Tecnologías:** PHP · Laminas/Mezzio · Zend · Angular · GraphQL · REST · OAuth2 · MySQL/MariaDB — [Ver caso de estudio](https://github.com/jrequena/cv/blob/main/projects/university-platform.md)
 
-### [Sistema de reservas hoteleras](projects/hotel-booking.md)
+### Sistema de reservas hoteleras
 *Navicu.com · 2014–2017*
 
 Reservas con validación de disponibilidad por rango de fechas, prevención de overbooking mediante control de concurrencia y gestión de estados de reserva.
 
-**Tecnologías:** PHP · Symfony · AngularJS · MySQL
+**Tecnologías:** PHP · Symfony · AngularJS · MySQL — [Ver caso de estudio](https://github.com/jrequena/cv/blob/main/projects/hotel-booking.md)
 
-### [Mabel — generador de código PHP](projects/mabel.md)
+### Mabel — generador de código PHP
 *Proyecto personal · repositorio privado*
 
 Herramienta local que genera componentes PHP (DTOs, Enums) a partir de contratos YAML, con apoyo de LLMs locales.
 
-**Tecnologías:** Python · YAML · PHP · Ollama · LLMs
+**Tecnologías:** Python · YAML · PHP · Ollama · LLMs — [Ver caso de estudio](https://github.com/jrequena/cv/blob/main/projects/mabel.md)
 
-## 🛠 Habilidades técnicas
+## Habilidades técnicas
 
 - **Lenguajes:** PHP, TypeScript, JavaScript, SQL
 - **Backend:** Laminas / Mezzio (antes Zend Expressive), Zend Framework, Symfony, Node.js / Express, Eloquent, PDO, Composer
@@ -83,36 +83,22 @@ Herramienta local que genera componentes PHP (DTOs, Enums) a partir de contratos
 - **Arquitectura y prácticas:** SOLID, Patrones de diseño (Repository, Mapper), PSR, Pruebas unitarias, Scrum
 - **Infraestructura:** Linux, Docker, Portainer, Apache, Git
 - **IA:** Agentes de IA, MCP, Asistentes de código, LLMs locales (Ollama), Python (proyectos personales)
+- **Legacy:** AngularJS, jQuery, AJAX, jqGrid, Dropzone, Quill
 
-## 🎓 Formación
+## Habilidades profesionales
+
+- Liderazgo técnico y mentoring
+- Comunicación directa con clientes y stakeholders
+- Trabajo en equipos ágiles (Scrum)
+- Análisis y resolución de problemas
+- Adaptación rápida a nuevas tecnologías
+
+## Formación
 
 **Ingeniería en Informática** — Universidad Nacional Experimental Rómulo Gallegos (UNERG) · 2014
 
-## 🌎 Idiomas
+## Idiomas
 
 - Español — Nativo
 - Portugués — Intermedio
 - Inglés — Básico
-
----
-
-## 📂 Sobre este repositorio
-
-Todo el CV se genera a partir de una **única fuente de datos**:
-
-```text
-data/profile.yaml   → datos, experiencia, proyectos, skills
-data/variants.yaml  → qué incluye cada versión del CV
-projects/*.md       → casos de estudio detallados
-templates/*.j2      → plantillas Markdown / HTML / README
-output/<idioma>/    → CV generados (no editar a mano)
-```
-
-Para regenerar los CV y este README:
-
-```bash
-pip install -r requirements.txt
-python build.py
-```
-
-Para obtener el PDF, abre cualquier `output/<idioma>/*.html` en el navegador e imprime como PDF.

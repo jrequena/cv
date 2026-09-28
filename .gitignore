@@ -1,0 +1,6 @@
+# Documentos de trabajo privados (contienen detalles internos de clientes)
+private/
+
+# Python
+__pycache__/
+.venv/

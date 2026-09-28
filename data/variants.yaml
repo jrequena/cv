@@ -1,0 +1,90 @@
+# =============================================================================
+# VARIANTES DEL CV
+# -----------------------------------------------------------------------------
+# Cada variante genera output/<idioma>/<file>.md y .html
+#
+#   headline            clave de profile.yaml → headlines
+#   summary             clave de profile.yaml → summaries
+#   tags                logros/proyectos incluidos (all = todos)
+#   focus               tag cuyos logros suben un nivel de prioridad (opcional)
+#   max_highlights      máximo de logros en el empleo actual
+#   max_highlights_previous   máximo en empleos anteriores
+#   max_priority        solo logros con priority <= este valor
+#   projects            incluir sección de proyectos
+#   include_internship  incluir pasantías
+#   legacy_skills       incluir el grupo de skills legacy
+#   soft_skills         incluir habilidades profesionales
+#   show_company        mostrar datos de la empresa PJ (UNIVIAN TECH)
+# =============================================================================
+
+main:
+  file: cv
+  headline: fullstack_lead
+  summary: main
+  tags: [fullstack, lead, backend, ai]
+  max_highlights: 7
+  max_highlights_previous: 3
+  max_priority: 2
+  projects: true
+  include_internship: false
+  legacy_skills: false
+  soft_skills: true
+  show_company: true
+
+backend:
+  file: cv-backend
+  headline: backend_arch
+  summary: backend
+  focus: architecture
+  tags: [backend, architecture, lead, data]
+  max_highlights: 7
+  max_highlights_previous: 3
+  max_priority: 3
+  projects: true
+  include_internship: false
+  legacy_skills: false
+  soft_skills: true
+  show_company: true
+
+ai:
+  file: cv-ai
+  headline: ai_dev
+  summary: ai
+  focus: ai
+  tags: [ai, lead, backend, architecture]
+  max_highlights: 5
+  max_highlights_previous: 2
+  max_priority: 2
+  projects: true
+  include_internship: false
+  legacy_skills: false
+  soft_skills: true
+  show_company: true
+
+one-page:
+  file: cv-1page
+  headline: fullstack_lead
+  summary: main
+  tags: [fullstack, lead]
+  max_highlights: 4
+  max_highlights_previous: 2
+  max_priority: 1
+  projects: false
+  include_internship: false
+  legacy_skills: false
+  soft_skills: false
+  show_company: false
+
+full:
+  file: cv-full
+  headline: fullstack_lead
+  summary: main
+  tags: all
+  max_highlights: 99
+  max_highlights_previous: 99
+  max_priority: 3
+  projects: true
+  include_internship: true
+  legacy_skills: true
+  soft_skills: true
+  show_company: true
