@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joel David Requena Pulido — CV</title>
+<style>
+  :root { --text: #1f2328; --muted: #57606a; --accent: #1f4e79; --rule: #d0d7de; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #fff; color: var(--text);
+         font: 10.5pt/1.45 "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 32px 24px; }
+  h1 { margin: 0; font-size: 22pt; letter-spacing: -0.01em; }
+  .headline { margin: 2px 0 0; font-size: 12pt; font-weight: 600; color: var(--accent); }
+  .stack { margin: 2px 0 0; color: var(--muted); }
+  .contact { margin: 10px 0 0; color: var(--muted); font-size: 9.5pt; }
+  .contact a { color: inherit; }
+  h2 { margin: 20px 0 8px; padding-bottom: 3px; border-bottom: 1px solid var(--rule);
+       font-size: 11pt; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
+  h3 { margin: 12px 0 0; font-size: 11pt; }
+  .meta { color: var(--muted); font-size: 9.5pt; }
+  .role { margin: 2px 0 0; }
+  .role span { color: var(--muted); }
+  ul { margin: 4px 0 0; padding-left: 18px; }
+  li { margin: 2px 0; }
+  p { margin: 4px 0 0; }
+  .skills { display: grid; grid-template-columns: max-content 1fr; gap: 3px 12px; margin: 0; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; }
+  .project, .job { break-inside: avoid; }
+  @media (max-width: 600px) { .skills { grid-template-columns: 1fr; } .skills dd { margin-bottom: 6px; } }
+  @page { size: A4; margin: 14mm; }
+  @media print { main { padding: 0; max-width: none; } a { text-decoration: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Joel David Requena Pulido</h1>
+    <p class="headline">Desenvolvedor Full Stack Sênior · Tech Lead</p>
+    <p class="stack">PHP · Angular · APIs REST e GraphQL · MySQL/PostgreSQL · IA aplicada ao desenvolvimento</p>
+    <p class="contact">
+      Curitiba, Brasil · <a href="mailto:joel.2005.2@gmail.com">joel.2005.2@gmail.com</a> · +55 41 99729611<br>
+      <a href="https://www.linkedin.com/in/joel-david-32b270b8">linkedin.com/in/joel-david-32b270b8</a> ·
+      <a href="https://github.com/jrequena">github.com/jrequena</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Perfil</h2>
+    <p>Desenvolvedor Full Stack Sênior e Tech Lead com mais de 11 anos de experiência em sistemas web corporativos com PHP, Angular e bancos de dados relacionais. Projetei e construí do zero uma plataforma universitária com mais de 10 módulos e mais de 5.000 usuários, que levei à produção e continuo evoluindo. Desde 2023 lidero uma equipe de 3–5 desenvolvedores, tomo decisões de arquitetura e trabalho diretamente com o cliente. Uso agentes de IA e MCP no dia a dia do desenvolvimento.</p>
+  </section>
+
+  <section>
+    <h2>Experiência profissional</h2>
+    <div class="job">
+      <h3>GNBIT</h3>
+      <div class="meta">Lima, Peru · atualmente remoto a partir de Curitiba, Brasil</div>
+      <p class="role"><strong>Tech Lead</strong> <span>· 2023 – Atual</span></p>
+      <p class="role"><strong>Full Stack Developer</strong> <span>· jun. 2017 – 2022</span></p>
+      <ul>
+        <li>Projetei e construí do zero uma plataforma universitária de gestão acadêmica e de pesquisa (mais de 10 módulos, mais de 5.000 usuários), levei-a à produção e continuo mantendo e evoluindo.</li>
+        <li>Desde 2023 lidero uma equipe de 3–5 desenvolvedores: decisões de arquitetura, mentoria e relacionamento direto com o cliente.</li>
+        <li>Digitalizei 100% do ciclo de teses e projetos (cadastro, revisão, avaliação e aprovação) para milhares de trabalhos, reduzindo o tempo de aprovação de semanas para dias, com rastreabilidade completa de cada status.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Castro Group · Navicu.com</h3>
+      <div class="meta">Carabobo, Venezuela</div>
+      <p class="role"><strong>Full Stack Developer</strong> <span>· out. 2014 – mar. 2017</span></p>
+      <ul>
+        <li>Desenvolvimento e manutenção da plataforma de reservas hoteleiras da Navicu.com com PHP (Symfony), AngularJS e MySQL.</li>
+        <li>Validação de disponibilidade por período e prevenção de overbooking com transações e restrições no banco de dados.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>Habilidades técnicas</h2>
+    <dl class="skills">
+      <dt>Linguagens</dt>
+      <dd>PHP, TypeScript, JavaScript, SQL</dd>
+      <dt>Backend</dt>
+      <dd>Laminas / Mezzio (antigo Zend Expressive), Zend Framework, Symfony, Node.js / Express, Eloquent, PDO, Composer</dd>
+      <dt>APIs e integração</dt>
+      <dd>REST, GraphQL, SOAP / XML, JSON</dd>
+      <dt>Frontend</dt>
+      <dd>Angular (Signals), NG-Zorro, Apollo Client, HTML / CSS</dd>
+      <dt>Bancos de dados</dt>
+      <dd>MySQL, MariaDB, PostgreSQL</dd>
+      <dt>Segurança</dt>
+      <dd>OAuth2, RBAC, Casbin</dd>
+      <dt>Arquitetura e práticas</dt>
+      <dd>SOLID, Padrões de projeto (Repository, Mapper), PSR, Testes unitários, Scrum</dd>
+      <dt>Infraestrutura</dt>
+      <dd>Linux, Docker, Portainer, Apache, Git</dd>
+      <dt>IA</dt>
+      <dd>Agentes de IA, MCP, Assistentes de código, LLMs locais (Ollama), Python (projetos pessoais)</dd>
+    </dl>
+  </section>
+
+
+  <section>
+    <h2>Formação acadêmica</h2>
+    <p><strong>Engenharia de Computação (Ingeniería en Informática)</strong> — Universidad Nacional Experimental Rómulo Gallegos (UNERG) · 2014</p>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <p>Espanhol — Nativo · Português — Intermediário · Inglês — Básico</p>
+  </section>
+</main>
+</body>
+</html>

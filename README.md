@@ -21,11 +21,30 @@ Desarrollador Full Stack Senior y Tech Lead con más de 11 años de experiencia 
 
 ## 📄 Versiones del CV
 
-- **CV principal — Full Stack Senior / Tech Lead** — [Markdown](output/es/cv.md) · [HTML / PDF](output/es/cv.html)
-- **Backend y Arquitectura** — [Markdown](output/es/cv-backend.md) · [HTML / PDF](output/es/cv-backend.html)
-- **Desarrollo asistido por IA** — [Markdown](output/es/cv-ai.md) · [HTML / PDF](output/es/cv-ai.html)
-- **Resumen de una página** — [Markdown](output/es/cv-1page.md) · [HTML / PDF](output/es/cv-1page.html)
-- **Versión completa** — [Markdown](output/es/cv-full.md) · [HTML / PDF](output/es/cv-full.html)
+**Español**
+
+- CV principal — Full Stack Senior / Tech Lead — [Markdown](output/es/cv.md) · [HTML / PDF](output/es/cv.html)
+- Backend y Arquitectura — [Markdown](output/es/cv-backend.md) · [HTML / PDF](output/es/cv-backend.html)
+- Desarrollo asistido por IA — [Markdown](output/es/cv-ai.md) · [HTML / PDF](output/es/cv-ai.html)
+- Resumen de una página — [Markdown](output/es/cv-1page.md) · [HTML / PDF](output/es/cv-1page.html)
+- Versión completa — [Markdown](output/es/cv-full.md) · [HTML / PDF](output/es/cv-full.html)
+
+**Português (Brasil)**
+
+- CV principal — Full Stack Sênior / Tech Lead — [Markdown](output/pt-BR/cv.md) · [HTML / PDF](output/pt-BR/cv.html)
+- Backend e Arquitetura — [Markdown](output/pt-BR/cv-backend.md) · [HTML / PDF](output/pt-BR/cv-backend.html)
+- Desenvolvimento assistido por IA — [Markdown](output/pt-BR/cv-ai.md) · [HTML / PDF](output/pt-BR/cv-ai.html)
+- Resumo de uma página — [Markdown](output/pt-BR/cv-1page.md) · [HTML / PDF](output/pt-BR/cv-1page.html)
+- Versão completa — [Markdown](output/pt-BR/cv-full.md) · [HTML / PDF](output/pt-BR/cv-full.html)
+
+**English**
+
+- Main CV — Senior Full Stack / Tech Lead — [Markdown](output/en/cv.md) · [HTML / PDF](output/en/cv.html)
+- Backend & Architecture — [Markdown](output/en/cv-backend.md) · [HTML / PDF](output/en/cv-backend.html)
+- AI-assisted development — [Markdown](output/en/cv-ai.md) · [HTML / PDF](output/en/cv-ai.html)
+- One-page summary — [Markdown](output/en/cv-1page.md) · [HTML / PDF](output/en/cv-1page.html)
+- Full version — [Markdown](output/en/cv-full.md) · [HTML / PDF](output/en/cv-full.html)
+
 
 ## 💼 Experiencia profesional
 

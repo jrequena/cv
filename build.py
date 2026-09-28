@@ -40,7 +40,55 @@ LABELS = {
             "full": "Versión completa",
         },
     },
+    "pt-BR": {
+        "profile": "Perfil",
+        "experience": "Experiência profissional",
+        "projects": "Projetos em destaque",
+        "skills": "Habilidades técnicas",
+        "soft_skills": "Competências comportamentais",
+        "education": "Formação acadêmica",
+        "languages": "Idiomas",
+        "present": "Atual",
+        "tech": "Tecnologias",
+        "case_study": "Ver estudo de caso (em espanhol)",
+        "pj": "Contratação PJ",
+        "downloads": "Versões do CV",
+        "months": ["jan.", "fev.", "mar.", "abr.", "mai.", "jun.",
+                   "jul.", "ago.", "set.", "out.", "nov.", "dez."],
+        "variants": {
+            "main": "CV principal — Full Stack Sênior / Tech Lead",
+            "backend": "Backend e Arquitetura",
+            "ai": "Desenvolvimento assistido por IA",
+            "one-page": "Resumo de uma página",
+            "full": "Versão completa",
+        },
+    },
+    "en": {
+        "profile": "Profile",
+        "experience": "Professional experience",
+        "projects": "Selected projects",
+        "skills": "Technical skills",
+        "soft_skills": "Soft skills",
+        "education": "Education",
+        "languages": "Languages",
+        "present": "Present",
+        "tech": "Tech",
+        "case_study": "Case study (in Spanish)",
+        "pj": "Contracting entity (Brazil)",
+        "downloads": "CV versions",
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        "variants": {
+            "main": "Main CV — Senior Full Stack / Tech Lead",
+            "backend": "Backend & Architecture",
+            "ai": "AI-assisted development",
+            "one-page": "One-page summary",
+            "full": "Full version",
+        },
+    },
 }
+
+LANGUAGE_NAMES = {"es": "Español", "pt-BR": "Português (Brasil)", "en": "English"}
 
 
 class MissingTranslation(Exception):
@@ -125,7 +173,10 @@ def build_context(profile, variant, lang, today):
         "experience": select_experience(profile, variant),
         "projects": [p for p in profile["projects"] if matches(p["tags"], variant["tags"])]
         if variant["projects"] else [],
-        "skills": [s for s in profile["skills"] if variant["legacy_skills"] or not s.get("legacy")],
+        "skills": [
+            {"group": t(s["group"]), "items": [t(i) for i in s["items"]]}
+            for s in profile["skills"] if variant["legacy_skills"] or not s.get("legacy")
+        ],
         "soft_skills": profile["soft_skills"] if variant["soft_skills"] else [],
         "education": profile["education"],
         "languages": profile["languages"],
@@ -168,6 +219,8 @@ def main():
         ctx = build_context(profile, variants["main"], lang, today)
         ctx["variants"] = variants
         ctx["enabled_languages"] = profile["enabled_languages"]
+        ctx["language_names"] = LANGUAGE_NAMES
+        ctx["all_labels"] = LABELS
         readme = env.get_template("readme.md.j2").render(**ctx)
         (ROOT / "README.md").write_text(readme, encoding="utf-8")
         print("✓ README.md")

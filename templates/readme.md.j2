@@ -21,10 +21,13 @@
 
 ## 📄 {{ L.downloads }}
 
-{% for lang in enabled_languages %}
+{% for code in enabled_languages %}
+**{{ language_names[code] }}**
+
 {% for name, v in variants.items() %}
-- **{{ L.variants[name] }}** — [Markdown](output/{{ lang }}/{{ v.file }}.md) · [HTML / PDF](output/{{ lang }}/{{ v.file }}.html)
+- {{ all_labels[code].variants[name] }} — [Markdown](output/{{ code }}/{{ v.file }}.md) · [HTML / PDF](output/{{ code }}/{{ v.file }}.html)
 {% endfor %}
+
 {% endfor %}
 
 ## 💼 {{ L.experience }}

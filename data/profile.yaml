@@ -9,13 +9,15 @@
 # - No editar output/ ni README.md a mano: se generan con `python build.py`.
 # =============================================================================
 
-enabled_languages: [es]          # añadir pt-BR y en cuando estén traducidos
+enabled_languages: [es, pt-BR, en]
 
 basics:
   name: Joel David Requena Pulido
   career_start: 2014-10          # base para calcular los años de experiencia
   location:
     es: Curitiba, Brasil
+    pt-BR: Curitiba, Brasil
+    en: Curitiba, Brazil
   email: joel.2005.2@gmail.com
   phone: "+55 41 99729611"
   linkedin: https://www.linkedin.com/in/joel-david-32b270b8
@@ -29,18 +31,30 @@ headlines:
   fullstack_lead:
     title:
       es: Senior Full Stack Developer · Tech Lead
+      pt-BR: Desenvolvedor Full Stack Sênior · Tech Lead
+      en: Senior Full Stack Developer · Tech Lead
     stack:
       es: PHP · Angular · APIs REST y GraphQL · MySQL/PostgreSQL · IA aplicada al desarrollo
+      pt-BR: PHP · Angular · APIs REST e GraphQL · MySQL/PostgreSQL · IA aplicada ao desenvolvimento
+      en: PHP · Angular · REST & GraphQL APIs · MySQL/PostgreSQL · AI-assisted development
   backend_arch:
     title:
       es: Tech Lead · Backend y Arquitectura de Software
+      pt-BR: Tech Lead · Backend e Arquitetura de Software
+      en: Tech Lead · Backend & Software Architecture
     stack:
       es: PHP (Laminas/Mezzio) · Node.js · APIs REST y GraphQL · MySQL/MariaDB/PostgreSQL
+      pt-BR: PHP (Laminas/Mezzio) · Node.js · APIs REST e GraphQL · MySQL/MariaDB/PostgreSQL
+      en: PHP (Laminas/Mezzio) · Node.js · REST & GraphQL APIs · MySQL/MariaDB/PostgreSQL
   ai_dev:
     title:
       es: Tech Lead · Desarrollo de software asistido por IA
+      pt-BR: Tech Lead · Desenvolvimento de software assistido por IA
+      en: Tech Lead · AI-Assisted Software Development
     stack:
       es: PHP · Angular · Agentes de IA · MCP · LLMs locales (Ollama)
+      pt-BR: PHP · Angular · Agentes de IA · MCP · LLMs locais (Ollama)
+      en: PHP · Angular · AI agents · MCP · Local LLMs (Ollama)
 
 # {years} se sustituye por los años completos desde basics.career_start
 summaries:
@@ -52,6 +66,20 @@ summaries:
       más de 5.000 usuarios, que llevé a producción y sigo evolucionando. Desde 2023
       lidero un equipo de 3–5 desarrolladores, tomo decisiones de arquitectura y trabajo
       directamente con el cliente. Integro agentes de IA y MCP en el día a día del desarrollo.
+    pt-BR: >-
+      Desenvolvedor Full Stack Sênior e Tech Lead com mais de {years} anos de experiência
+      em sistemas web corporativos com PHP, Angular e bancos de dados relacionais.
+      Projetei e construí do zero uma plataforma universitária com mais de 10 módulos e
+      mais de 5.000 usuários, que levei à produção e continuo evoluindo. Desde 2023
+      lidero uma equipe de 3–5 desenvolvedores, tomo decisões de arquitetura e trabalho
+      diretamente com o cliente. Uso agentes de IA e MCP no dia a dia do desenvolvimento.
+    en: >-
+      Senior Full Stack Developer and Tech Lead with {years}+ years of experience building
+      enterprise web systems with PHP, Angular and relational databases. I designed and
+      built from scratch a university platform with 10+ modules and 5,000+ users, took it
+      to production and keep evolving it. Since 2023 I have led a team of 3–5 developers,
+      making architecture decisions and working directly with the client. I use AI agents
+      and MCP in day-to-day development.
   backend:
     es: >-
       Tech Lead con más de {years} años de experiencia, especializado en backend, APIs e
@@ -60,6 +88,20 @@ summaries:
       Diseñé la arquitectura de una plataforma universitaria de más de 10 módulos y más de
       5.000 usuarios, con una base de datos de más de 100.000 registros interrelacionados,
       y la hago evolucionar de forma incremental combinando módulos legacy y modernos.
+    pt-BR: >-
+      Tech Lead com mais de {years} anos de experiência, especializado em backend, APIs e
+      integração de sistemas. Experiência com PHP moderno e legado (Zend, Laminas/Mezzio,
+      Symfony), Node.js/Express, APIs REST e GraphQL, OAuth2 e controle de acesso baseado
+      em papéis. Projetei a arquitetura de uma plataforma universitária com mais de 10
+      módulos e mais de 5.000 usuários, com um banco de dados de mais de 100.000 registros
+      inter-relacionados, e a evoluo de forma incremental, combinando módulos legados e modernos.
+    en: >-
+      Tech Lead with {years}+ years of experience, specialized in backend, APIs and systems
+      integration. Experience with modern and legacy PHP (Zend, Laminas/Mezzio, Symfony),
+      Node.js/Express, REST and GraphQL APIs, OAuth2 and role-based access control. I
+      designed the architecture of a university platform with 10+ modules and 5,000+ users,
+      backed by a database of 100,000+ interrelated records, and evolve it incrementally,
+      combining legacy and modern modules.
   ai:
     es: >-
       Tech Lead con más de {years} años de experiencia en desarrollo backend y full stack,
@@ -68,12 +110,26 @@ summaries:
       código y analizar código legacy. En proyectos personales experimento con LLMs
       locales (Ollama) y desarrollo Mabel, un generador de código PHP a partir de
       contratos YAML.
+    pt-BR: >-
+      Tech Lead com mais de {years} anos de experiência em desenvolvimento backend e full
+      stack, e uma especialização crescente em desenvolvimento de software assistido por IA.
+      No trabalho uso agentes de IA e servidores MCP para consultar bancos de dados, gerar
+      código e analisar código legado. Em projetos pessoais experimento com LLMs locais
+      (Ollama) e desenvolvo o Mabel, um gerador de código PHP a partir de contratos YAML.
+    en: >-
+      Tech Lead with {years}+ years of experience in backend and full stack development,
+      and a growing focus on AI-assisted software development. At work I use AI agents and
+      MCP servers to query databases, generate code and analyze legacy code. In personal
+      projects I experiment with local LLMs (Ollama) and build Mabel, a PHP code generator
+      driven by YAML contracts.
 
 experience:
   - id: gnbit
     company: GNBIT
     location:
       es: Lima, Perú · actualmente en remoto desde Curitiba, Brasil
+      pt-BR: Lima, Peru · atualmente remoto a partir de Curitiba, Brasil
+      en: Lima, Peru · currently remote from Curitiba, Brazil
     roles:
       - title: Tech Lead
         start: "2023"
@@ -86,12 +142,26 @@ experience:
             Diseñé y construí desde cero una plataforma universitaria de gestión académica
             y de investigación (más de 10 módulos, más de 5.000 usuarios), la llevé a
             producción y la sigo manteniendo y evolucionando.
+          pt-BR: >-
+            Projetei e construí do zero uma plataforma universitária de gestão acadêmica e
+            de pesquisa (mais de 10 módulos, mais de 5.000 usuários), levei-a à produção e
+            continuo mantendo e evoluindo.
+          en: >-
+            Designed and built from scratch a university platform for academic and research
+            management (10+ modules, 5,000+ users), took it to production and continue to
+            maintain and evolve it.
         tags: [fullstack, backend, architecture, lead]
         priority: 1
       - text:
           es: >-
             Desde 2023 lidero un equipo de 3–5 desarrolladores: decisiones de arquitectura,
             mentoring y relación directa con el cliente.
+          pt-BR: >-
+            Desde 2023 lidero uma equipe de 3–5 desenvolvedores: decisões de arquitetura,
+            mentoria e relacionamento direto com o cliente.
+          en: >-
+            Lead a team of 3–5 developers since 2023: architecture decisions, mentoring and
+            direct client relationship.
         tags: [fullstack, backend, architecture, lead, ai]
         priority: 1
       - text:
@@ -99,18 +169,38 @@ experience:
             Digitalicé al 100% el ciclo de tesis y proyectos (registro, revisión, evaluación
             y aprobación) para miles de trabajos, reduciendo el tiempo de aprobación de
             semanas a días y con trazabilidad completa de cada estado.
+          pt-BR: >-
+            Digitalizei 100% do ciclo de teses e projetos (cadastro, revisão, avaliação e
+            aprovação) para milhares de trabalhos, reduzindo o tempo de aprovação de semanas
+            para dias, com rastreabilidade completa de cada status.
+          en: >-
+            Fully digitized the thesis and project lifecycle (registration, review,
+            evaluation and approval) for thousands of submissions, cutting approval time
+            from weeks to days with full traceability of every status.
         tags: [fullstack, backend, lead]
         priority: 1
       - text:
           es: >-
             Backend en PHP (Zend legacy y Laminas/Mezzio) con APIs REST y GraphQL,
             autenticación OAuth2 y control de acceso por roles.
+          pt-BR: >-
+            Backend em PHP (Zend legado e Laminas/Mezzio) com APIs REST e GraphQL,
+            autenticação OAuth2 e controle de acesso baseado em papéis.
+          en: >-
+            Built the backend in PHP (legacy Zend and Laminas/Mezzio) with REST and GraphQL
+            APIs, OAuth2 authentication and role-based access control.
         tags: [fullstack, backend, architecture]
         priority: 2
       - text:
           es: >-
             Frontend en Angular y TypeScript (Signals, NG-Zorro, Apollo/GraphQL) con
             formularios dinámicos y componentes reutilizables.
+          pt-BR: >-
+            Frontend em Angular e TypeScript (Signals, NG-Zorro, Apollo/GraphQL) com
+            formulários dinâmicos e componentes reutilizáveis.
+          en: >-
+            Built the frontend in Angular and TypeScript (Signals, NG-Zorro, Apollo/GraphQL)
+            with dynamic forms and reusable components.
         tags: [fullstack]
         priority: 2
       - text:
@@ -118,28 +208,56 @@ experience:
             Modelado y optimización de una base de datos MySQL/MariaDB con más de 100.000
             registros interrelacionados; integración y sincronización con el sistema de RRHH
             institucional, depuración de duplicados y de registros huérfanos.
+          pt-BR: >-
+            Modelagem e otimização de um banco de dados MySQL/MariaDB com mais de 100.000
+            registros inter-relacionados; integração e sincronização com o sistema de RH
+            institucional, limpeza de duplicados e de registros órfãos.
+          en: >-
+            Modeled and optimized a MySQL/MariaDB database with 100,000+ interrelated
+            records; integrated and synchronized it with the institutional HR system,
+            cleaning up duplicates and orphaned records.
         tags: [backend, fullstack, data]
         priority: 2
       - text:
           es: >-
             Evolución incremental del sistema: los módulos legacy (Zend, jQuery) conviven con
             los nuevos (Mezzio, Angular, GraphQL) y se refactorizan de forma progresiva.
+          pt-BR: >-
+            Evolução incremental do sistema: os módulos legados (Zend, jQuery) convivem com
+            os novos (Mezzio, Angular, GraphQL) e são refatorados progressivamente.
+          en: >-
+            Evolve the system incrementally: legacy modules (Zend, jQuery) run alongside new
+            ones (Mezzio, Angular, GraphQL) and are progressively refactored.
         tags: [backend, architecture]
         priority: 2
       - text:
           es: >-
             Uso diario de agentes de IA y servidores MCP para consultar la base de datos,
             generar código y analizar código legacy.
+          pt-BR: >-
+            Uso diário de agentes de IA e servidores MCP para consultar o banco de dados,
+            gerar código e analisar código legado.
+          en: >-
+            Use AI agents and MCP servers daily to query the database, generate code and
+            analyze legacy code.
         tags: [ai, fullstack, backend]
         priority: 2
       - text:
           es: >-
             Gestión documental: carga, versionado, tipos y estados de documentos asociados a
             proyectos y enmiendas.
+          pt-BR: >-
+            Gestão documental: upload, versionamento, tipos e status de documentos vinculados
+            a projetos e emendas.
+          en: >-
+            Implemented document management: upload, versioning, document types and statuses
+            linked to projects and amendments.
         tags: [backend, fullstack]
         priority: 3
       - text:
           es: Soporte de producción y resolución de incidencias.
+          pt-BR: Suporte em produção e resolução de incidentes.
+          en: Provide production support and resolve incidents.
         tags: [fullstack, backend]
         priority: 3
 
@@ -147,6 +265,8 @@ experience:
     company: Castro Group · Navicu.com
     location:
       es: Carabobo, Venezuela
+      pt-BR: Carabobo, Venezuela
+      en: Carabobo, Venezuela
     roles:
       - title: Full Stack Developer
         start: 2014-10
@@ -156,21 +276,39 @@ experience:
           es: >-
             Desarrollo y mantenimiento de la plataforma de reservas hoteleras de Navicu.com
             con PHP (Symfony), AngularJS y MySQL.
+          pt-BR: >-
+            Desenvolvimento e manutenção da plataforma de reservas hoteleiras da Navicu.com
+            com PHP (Symfony), AngularJS e MySQL.
+          en: >-
+            Developed and maintained Navicu.com's hotel booking platform with PHP (Symfony),
+            AngularJS and MySQL.
         tags: [fullstack, backend, ai]
         priority: 1
       - text:
           es: >-
             Validación de disponibilidad por rango de fechas y prevención de overbooking
             mediante transacciones y restricciones en base de datos.
+          pt-BR: >-
+            Validação de disponibilidade por período e prevenção de overbooking com
+            transações e restrições no banco de dados.
+          en: >-
+            Implemented date-range availability validation and overbooking prevention using
+            transactions and database constraints.
         tags: [fullstack, backend]
         priority: 1
       - text:
           es: >-
             Auxiliar de Scrum Master: planificación y seguimiento de las tareas del equipo.
+          pt-BR: >-
+            Auxiliar de Scrum Master: planejamento e acompanhamento das tarefas da equipe.
+          en: >-
+            Served as assistant Scrum Master, planning and tracking the team's tasks.
         tags: [fullstack, lead]
         priority: 2
       - text:
           es: Administración y soporte de las bases de datos.
+          pt-BR: Administração e suporte dos bancos de dados.
+          en: Administered and supported the databases.
         tags: [fullstack, backend]
         priority: 3
 
@@ -179,9 +317,13 @@ experience:
     company: M.P.P.T.T. (Ministerio del Poder Popular para el Transporte Terrestre)
     location:
       es: Guárico, Venezuela
+      pt-BR: Guárico, Venezuela
+      en: Guárico, Venezuela
     roles:
       - title:
           es: Desarrollador Web (pasantía, 3 meses)
+          pt-BR: Desenvolvedor Web (estágio, 3 meses)
+          en: Web Developer (internship, 3 months)
         start: "2014"
         end: "2014"
     highlights:
@@ -189,6 +331,12 @@ experience:
           es: >-
             Automatización de procesos administrativos del departamento de Recursos Humanos
             mediante herramientas web internas.
+          pt-BR: >-
+            Automação de processos administrativos do departamento de Recursos Humanos por
+            meio de ferramentas web internas.
+          en: >-
+            Automated administrative processes for the Human Resources department through
+            internal web tools.
         tags: [fullstack, backend]
         priority: 1
 
@@ -196,14 +344,27 @@ projects:
   - id: university-platform
     name:
       es: Plataforma universitaria de gestión académica y de investigación
+      pt-BR: Plataforma universitária de gestão acadêmica e de pesquisa
+      en: University academic and research management platform
     context:
       es: GNBIT · diseño, construcción y liderazgo técnico
+      pt-BR: GNBIT · design, construção e liderança técnica
+      en: GNBIT · design, development and technical leadership
     summary:
       es: >-
         Plataforma de más de 10 módulos y más de 5.000 usuarios: tesis, evaluación y
         aprobación, enmiendas, gestión documental, investigadores y cursos, integración
         con RRHH y control presupuestario de proyectos. Proceso 100% digital y aprobaciones
         que pasaron de semanas a días.
+      pt-BR: >-
+        Plataforma com mais de 10 módulos e mais de 5.000 usuários: teses, avaliação e
+        aprovação, emendas, gestão documental, pesquisadores e cursos, integração com RH e
+        controle orçamentário de projetos. Processo 100% digital e aprovações que passaram
+        de semanas para dias.
+      en: >-
+        10+ modules and 5,000+ users: theses, evaluation and approval, amendments, document
+        management, researchers and courses, HR integration and project budget control.
+        Fully digital process, with approvals cut from weeks to days.
     tech: [PHP, Laminas/Mezzio, Zend, Angular, GraphQL, REST, OAuth2, MySQL/MariaDB]
     case_study: projects/university-platform.md
     tags: [fullstack, backend, architecture, lead, ai]
@@ -211,12 +372,19 @@ projects:
   - id: hotel-booking
     name:
       es: Sistema de reservas hoteleras
-    context:
-      es: Navicu.com · 2014–2017
+      pt-BR: Sistema de reservas hoteleiras
+      en: Hotel booking system
+    context: Navicu.com · 2014–2017
     summary:
       es: >-
         Reservas con validación de disponibilidad por rango de fechas, prevención de
         overbooking mediante control de concurrencia y gestión de estados de reserva.
+      pt-BR: >-
+        Reservas com validação de disponibilidade por período, prevenção de overbooking com
+        controle de concorrência e gestão de status das reservas.
+      en: >-
+        Bookings with date-range availability checks, overbooking prevention through
+        concurrency control, and booking status management.
     tech: [PHP, Symfony, AngularJS, MySQL]
     case_study: projects/hotel-booking.md
     tags: [fullstack, backend]
@@ -224,66 +392,86 @@ projects:
   - id: mabel
     name:
       es: Mabel — generador de código PHP
+      pt-BR: Mabel — gerador de código PHP
+      en: Mabel — PHP code generator
     context:
       es: Proyecto personal · repositorio privado
+      pt-BR: Projeto pessoal · repositório privado
+      en: Personal project · private repository
     summary:
       es: >-
         Herramienta local que genera componentes PHP (DTOs, Enums) a partir de contratos
         YAML, con apoyo de LLMs locales.
+      pt-BR: >-
+        Ferramenta local que gera componentes PHP (DTOs, Enums) a partir de contratos YAML,
+        com apoio de LLMs locais.
+      en: >-
+        Local tool that generates PHP components (DTOs, Enums) from YAML contracts,
+        assisted by local LLMs.
     tech: [Python, YAML, PHP, Ollama, LLMs]
     case_study: projects/mabel.md
     tags: [ai]
 
+# Los items pueden ser strings neutros o mapas por idioma
 skills:
-  - group:
-      es: Lenguajes
+  - group: { es: Lenguajes, pt-BR: Linguagens, en: Languages }
     items: [PHP, TypeScript, JavaScript, SQL]
-  - group:
-      es: Backend
-    items: [Laminas / Mezzio (antes Zend Expressive), Zend Framework, Symfony, Node.js / Express, Eloquent, PDO, Composer]
-  - group:
-      es: APIs e integración
+  - group: Backend
+    items:
+      - { es: Laminas / Mezzio (antes Zend Expressive), pt-BR: Laminas / Mezzio (antigo Zend Expressive), en: Laminas / Mezzio (formerly Zend Expressive) }
+      - Zend Framework
+      - Symfony
+      - Node.js / Express
+      - Eloquent
+      - PDO
+      - Composer
+  - group: { es: APIs e integración, pt-BR: APIs e integração, en: APIs & integration }
     items: [REST, GraphQL, SOAP / XML, JSON]
-  - group:
-      es: Frontend
+  - group: Frontend
     items: [Angular (Signals), NG-Zorro, Apollo Client, HTML / CSS]
-  - group:
-      es: Bases de datos
+  - group: { es: Bases de datos, pt-BR: Bancos de dados, en: Databases }
     items: [MySQL, MariaDB, PostgreSQL]
-  - group:
-      es: Seguridad
+  - group: { es: Seguridad, pt-BR: Segurança, en: Security }
     items: [OAuth2, RBAC, Casbin]
-  - group:
-      es: Arquitectura y prácticas
-    items: [SOLID, Patrones de diseño (Repository, Mapper), PSR, Pruebas unitarias, Scrum]
-  - group:
-      es: Infraestructura
+  - group: { es: Arquitectura y prácticas, pt-BR: Arquitetura e práticas, en: Architecture & practices }
+    items:
+      - SOLID
+      - { es: "Patrones de diseño (Repository, Mapper)", pt-BR: "Padrões de projeto (Repository, Mapper)", en: "Design patterns (Repository, Mapper)" }
+      - PSR
+      - { es: Pruebas unitarias, pt-BR: Testes unitários, en: Unit testing }
+      - Scrum
+  - group: { es: Infraestructura, pt-BR: Infraestrutura, en: Infrastructure }
     items: [Linux, Docker, Portainer, Apache, Git]
-  - group:
-      es: IA
-    items: [Agentes de IA, MCP, Asistentes de código, LLMs locales (Ollama), Python (proyectos personales)]
-  - group:
-      es: Legacy
+  - group: { es: IA, pt-BR: IA, en: AI }
+    items:
+      - { es: Agentes de IA, pt-BR: Agentes de IA, en: AI agents }
+      - MCP
+      - { es: Asistentes de código, pt-BR: Assistentes de código, en: Coding assistants }
+      - { es: LLMs locales (Ollama), pt-BR: LLMs locais (Ollama), en: Local LLMs (Ollama) }
+      - { es: Python (proyectos personales), pt-BR: Python (projetos pessoais), en: Python (personal projects) }
+  - group: { es: Legacy, pt-BR: Legado, en: Legacy }
     legacy: true
     items: [AngularJS, jQuery, AJAX, jqGrid, Dropzone, Quill]
 
 soft_skills:
-  - es: Liderazgo técnico y mentoring
-  - es: Comunicación directa con clientes y stakeholders
-  - es: Trabajo en equipos ágiles (Scrum)
-  - es: Análisis y resolución de problemas
-  - es: Adaptación rápida a nuevas tecnologías
+  - { es: Liderazgo técnico y mentoring, pt-BR: Liderança técnica e mentoria, en: Technical leadership and mentoring }
+  - { es: Comunicación directa con clientes y stakeholders, pt-BR: Comunicação direta com clientes e stakeholders, en: Direct communication with clients and stakeholders }
+  - { es: Trabajo en equipos ágiles (Scrum), pt-BR: Trabalho em equipes ágeis (Scrum), en: Agile teamwork (Scrum) }
+  - { es: Análisis y resolución de problemas, pt-BR: Análise e resolução de problemas, en: Analytical thinking and problem solving }
+  - { es: Adaptación rápida a nuevas tecnologías, pt-BR: Adaptação rápida a novas tecnologias, en: Quick adaptation to new technologies }
 
 education:
   - degree:
       es: Ingeniería en Informática
+      pt-BR: Engenharia de Computação (Ingeniería en Informática)
+      en: Computer Engineering (Ingeniería en Informática)
     institution: Universidad Nacional Experimental Rómulo Gallegos (UNERG)
     end: "2014"
 
 languages:
-  - name: { es: Español }
-    level: { es: Nativo }
-  - name: { es: Portugués }
-    level: { es: Intermedio }
-  - name: { es: Inglés }
-    level: { es: Básico }
+  - name: { es: Español, pt-BR: Espanhol, en: Spanish }
+    level: { es: Nativo, pt-BR: Nativo, en: Native }
+  - name: { es: Portugués, pt-BR: Português, en: Portuguese }
+    level: { es: Intermedio, pt-BR: Intermediário, en: Intermediate }
+  - name: { es: Inglés, pt-BR: Inglês, en: English }
+    level: { es: Básico, pt-BR: Básico, en: Basic }
